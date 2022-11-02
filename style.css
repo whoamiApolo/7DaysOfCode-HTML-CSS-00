@@ -68,6 +68,7 @@ header #login-content button {
     line-height: 2.4rem;
     font-size: 1.6rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 header #login-content .login {
@@ -346,6 +347,7 @@ header #login-content .register {
     font-weight: 500;
     width: 11.6rem;
     height: 4.8rem;
+    cursor: pointer;
 }
 
 #formulario-content .formulario-box {
