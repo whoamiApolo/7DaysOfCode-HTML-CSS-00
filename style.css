@@ -85,6 +85,10 @@ header #login-content .register {
     border-radius: .8rem;
 }
 
+header #mobile-container {
+    display: none;
+}
+
 #cabecalho {
     display: flex;
     flex-direction: column;
@@ -115,12 +119,16 @@ header #login-content .register {
     font-weight: 400;
     line-height: 3rem;
     margin-top: 1.2rem;
+    text-align: justify;
 }
 
 #metricas {
     padding: 0 var(--tamanho);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 30rem));
     gap: 3.2rem;
+    text-align: center;
+    justify-content: center;
 }
 
 #metricas .metricas-content {
@@ -151,6 +159,7 @@ header #login-content .register {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.4rem;
+    text-align: justify;
 
 }
 
@@ -200,6 +209,7 @@ header #login-content .register {
 }
 
 #vagas .vagas-abertas {
+    width: 100%;
     padding-bottom: 6.4rem;
 }
 
@@ -220,7 +230,7 @@ header #login-content .register {
 #vagas .vagas-abertas .vagas-content{
     padding: 2.4rem 2.4rem 2.8rem;
     border: 1px solid #EAECF0;
-    width: 76.8rem;
+    width: auto;
     border-radius: 1.6rem;
     margin-bottom: 2.4rem;
 }
@@ -357,4 +367,189 @@ header #login-content .register {
 #formulario-content p:nth-last-child(1) {
     color: var(--color-copy);
     font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+    header #box-content .logo-content {
+        padding-right: calc(11.9rem - 6rem);
+    }
+
+    header #navbar-content .navbar-list {
+        gap: 1.6rem;
+    }
+
+    #cabecalho {
+        padding: 9.6rem var(--tamanho) 10.7rem;
+    }
+
+    #metricas {
+        grid-template-columns: repeat(3, minmax(20rem, 30rem));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0 calc(var(--tamanho) - 6rem);
+    }
+
+    header #box-content .logo-content {
+        padding-right: calc(11.9rem - 9rem);
+
+    }
+
+    header #navbar-content .navbar-list {
+        gap: .8rem;
+    }
+
+    header #login-content .login {
+        padding: .5rem .9rem;
+    }
+
+    header #login-content button {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    #cabecalho {
+        padding: 9.6rem calc(var(--tamanho) - 6rem) 10.7rem;
+    }
+
+    #metricas {
+        gap: 2.4rem;
+        padding: 0 calc(var(--tamanho) - 6rem)
+    }
+
+    #vagas {
+        padding: 9.6rem calc(var(--tamanho) - 6rem) 0;
+    }
+
+
+    #depoimentos {
+        margin: 0 calc(var(--tamanho) - 6rem)
+    }
+
+    #formulario-content {
+        padding: 9.6rem calc(var(--tamanho) - 6rem)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header #box-content .logo-content {
+    display: none;
+    }
+
+    header #navbar-content .navbar-list {
+        gap: 1.6rem;
+    }
+
+    #cabecalho h1 {
+        text-align: center;
+    }
+
+    #metricas {
+        grid-template-columns: repeat(2, minmax(auto, 27.5rem));
+        text-align: center;
+    }
+
+    #metricas h2 {
+        font-size: 4.8rem;
+    }
+
+    #metricas p {
+        font-size: 1.4rem;
+    }
+
+    #vagas p {
+        text-align: justify;
+    }
+
+    #vagas .vagas-abertas {
+       width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+header #box-content #navbar-content {
+    display: none;
+}
+
+header #login-content {
+    display: none;
+}
+
+header {
+    padding: 0 4rem;
+}
+
+header #mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+header #mobile-container .mobile-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+
+}
+
+header #mobile-container svg {
+    width: 3.2rem;
+}
+
+#cabecalho {
+    padding: 0 4rem 10.7rem;
+}
+
+#cabecalho h1 {
+    font-size: 4rem;
+}
+
+#metricas {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+#depoimentos {
+    margin: 0 4rem;
+    padding: 3.2rem;
+}
+
+#depoimentos h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+#formulario-content .formulario-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#formulario-content .formulario-box input, #formulario-content .formulario-box button {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+#formulario-content h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+#formulario-content p {
+    font-size: 1.8rem;
+} 
 }
