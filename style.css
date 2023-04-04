@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   /*  border: 1px solid red; */
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --white: #fff;
+    --color-red: #8e2424;
+    --color-azul: #667085;
+    --color-azul-escuro: #3A404E;
+    --color-azul-escuro2: #101828;
+    --color-bg: #C3191908;
+    --color-copy: #98A2B3;
+    --tamanho: 11.2rem;
+}
+
+/* body {
+    padding: 0 var(--tamanho);
+} */
+
+header {
+    padding: 0 var(--tamanho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+header #box-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    color: var(--color-azul-escuro);
+    gap: .8rem;
+}
+
+header #box-content .logo-content {
+    display: flex;
+    gap: .8rem;
+    padding-right: 11.9rem;
+    align-items: center;
+}
+
+header #box-content .logo-content p a {
+    color: black;
+    text-decoration: none;
+}
+
+header #navbar-content .navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 3.2rem;
+}   
+
+header #navbar-content .navbar-list a {
+    color: var(--color-azul);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+header #login-content button {
+    border: none;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header #login-content .login {
+    padding: 1rem 1.8rem;
+    border-radius: .8rem;
+    background: transparent;
+    color: var(--color-azul)
+}
+
+header #login-content .register {
+    padding: 1rem 1.8rem;
+    background: var(--color-red);
+    color: var(--white);
+    border-radius: .8rem;
+}
+
+header #mobile-container {
+    display: none;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 9.6rem calc(32.4rem - var(--tamanho)) 10.7rem;
+    gap: 2.4rem;
+}
+
+#cabecalho span {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color-red);
+    font-weight: 600;
+}
+
+#cabecalho h1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    letter-spacing: -0.02rem;
+    color: var(--color-azul-escuro2);
+}
+
+#cabecalho p {
+    color: var(--color-azul);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+
+#metricas {
+    padding: 0 var(--tamanho);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 30rem));
+    gap: 3.2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#metricas .metricas-content {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: 9.6rem;
+}
+
+#metricas h2 {
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 6rem;
+    letter-spacing: -0.02rem;
+    line-height: 7.2rem;
+}
+
+#metricas span {
+    color: var(--color-azul-escuro2);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    margin-top: .4rem;
+}
+
+#metricas p {
+    color: var(--color-azul);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: justify;
+
+}
+
+#vagas {
+    padding: 9.6rem var(--tamanho) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    
+}
+
+#vagas .vagas-title {
+    font-size: 1.4rem;
+    color: var(--color-red);
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 1.6rem;
+    padding: .4rem 1.2rem;
+}
+
+#vagas h2 {
+    color: var(--color-azul-escuro2);
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    letter-spacing: -0.02rem;
+    padding-bottom: .4rem;
+    
+}
+
+#vagas p {
+    color: var(--color-azul);
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    
+}
+
+#vagas img {
+    max-inline-size: 100%;
+    block-size: auto;
+    inline-size: 100%;
+    height: 40rem;
+    object-fit: cover;
+    margin: 6.4rem 0;
+    
+}
+
+#vagas .vagas-abertas {
+    width: 100%;
+    padding-bottom: 6.4rem;
+}
+
+#vagas .vagas-abertas:nth-last-child(1) {
+    padding-bottom: 9.6rem;
+}
+
+
+#vagas .vagas-abertas h3 {
+    font-size: 2rem;
+    color: var(--color-azul-escuro2);
+    line-height: 3rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+    
+}
+
+#vagas .vagas-abertas .vagas-content{
+    padding: 2.4rem 2.4rem 2.8rem;
+    border: 1px solid #EAECF0;
+    width: auto;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+#vagas .vagas-abertas .vagas-content:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#vagas .vagas-abertas .vagas-content span {
+    background: transparent;
+    border: none;
+    color: var(--color-azul-escuro2);
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#vagas .vagas-abertas .vagas-content .vagas-descritivo {
+    display: flex;
+    gap: 2.4rem;
+}
+
+#vagas .vagas-abertas .vagas-content .vagas-descritivo li {
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color-azul);
+    font-weight: 500;
+}
+
+#depoimentos {
+    margin: 0 var(--tamanho);
+    background: var(--color-bg);
+    border-radius: 1.6rem;
+    padding: 6.4rem;
+    text-align: center;
+}
+
+#depoimentos p {
+    color: var(--color-red);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+#depoimentos h2 {
+    color: var(--color-azul-escuro2);
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.02rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+#depoimentos img {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-bottom: 1.6rem;
+}
+
+#depoimentos p:nth-child(2n) {
+    color: var(--color-azul-escuro2);
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .4rem;
+}
+
+#depoimentos p:nth-last-child(1)  {
+    color: var(--color-azul);
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#formulario-content {
+    padding: 9.6rem var(--tamanho);
+    background: var(--color-bg);
+    margin-top: 9.6rem;
+    text-align: center;
+}
+
+#formulario-content h2 {
+    color: var(--color-azul-escuro2);
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 2rem;
+}
+
+#formulario-content p {
+    color: var(--color-azul);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+#formulario-content input[type="text"] {
+    background: var(--white);
+    border: .1rem solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: .8rem;
+    padding: 1.4rem 1.2rem 1.6rem;
+    color: var(--color-azul);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    width: 36rem;
+    height: 4.8rem;
+}
+
+#formulario-content button {
+    background: var(--color-red);
+    border: .1rem solid transparent;
+    border-radius: .8rem;
+    padding: 1.2rem 2rem;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    margin-left: 1.6rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    width: 11.6rem;
+    height: 4.8rem;
+    cursor: pointer;
+}
+
+#formulario-content .formulario-box {
+    margin: 4rem 0 3.2rem;
+}
+
+#formulario-content p:nth-last-child(1) {
+    color: var(--color-copy);
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+    header #box-content .logo-content {
+        padding-right: calc(11.9rem - 6rem);
+    }
+
+    header #navbar-content .navbar-list {
+        gap: 1.6rem;
+    }
+
+    #cabecalho {
+        padding: 9.6rem var(--tamanho) 10.7rem;
+    }
+
+    #metricas {
+        grid-template-columns: repeat(3, minmax(20rem, 30rem));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0 calc(var(--tamanho) - 6rem);
+    }
+
+    header #box-content .logo-content {
+        padding-right: calc(11.9rem - 9rem);
+
+    }
+
+    header #navbar-content .navbar-list {
+        gap: .8rem;
+    }
+
+    header #login-content .login {
+        padding: .5rem .9rem;
+    }
+
+    header #login-content button {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    #cabecalho {
+        padding: 9.6rem calc(var(--tamanho) - 6rem) 10.7rem;
+    }
+
+    #metricas {
+        gap: 2.4rem;
+        padding: 0 calc(var(--tamanho) - 6rem)
+    }
+
+    #vagas {
+        padding: 9.6rem calc(var(--tamanho) - 6rem) 0;
+    }
+
+
+    #depoimentos {
+        margin: 0 calc(var(--tamanho) - 6rem)
+    }
+
+    #formulario-content {
+        padding: 9.6rem calc(var(--tamanho) - 6rem)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header #box-content .logo-content {
+    display: none;
+    }
+
+    header #navbar-content .navbar-list {
+        gap: 1.6rem;
+    }
+
+    #cabecalho h1 {
+        text-align: center;
+    }
+
+    #metricas {
+        grid-template-columns: repeat(2, minmax(auto, 27.5rem));
+        text-align: center;
+    }
+
+    #metricas h2 {
+        font-size: 4.8rem;
+    }
+
+    #metricas p {
+        font-size: 1.4rem;
+    }
+
+    #vagas p {
+        text-align: justify;
+    }
+
+    #vagas .vagas-abertas {
+       width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+header #box-content #navbar-content {
+    display: none;
+}
+
+header #login-content {
+    display: none;
+}
+
+header {
+    padding: 0 4rem;
+}
+
+header #mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+header #mobile-container .mobile-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+
+}
+
+header #mobile-container svg {
+    width: 3.2rem;
+}
+
+#cabecalho {
+    padding: 0 4rem 10.7rem;
+}
+
+#cabecalho h1 {
+    font-size: 4rem;
+}
+
+#metricas {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+#depoimentos {
+    margin: 0 4rem;
+    padding: 3.2rem;
+}
+
+#depoimentos h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+#formulario-content .formulario-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#formulario-content .formulario-box input, #formulario-content .formulario-box button {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+#formulario-content h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+#formulario-content p {
+    font-size: 1.8rem;
+} 
+}
